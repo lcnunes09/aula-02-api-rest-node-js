@@ -1,0 +1,3 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIt's also necessary to install the package @types/node as a development dependency.\\E$"}
+{"rule":"IN_A_X_MANNER","sentence":"^\\QMigrations ensure that as a project evolves, changes to the database schema can be tracked, versioned, and applied in a consistent manner across different environments.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWhen opening the \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q file, look for editor.codeActionsOnSave:\\E$"}
