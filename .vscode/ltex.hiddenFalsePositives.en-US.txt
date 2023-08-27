@@ -13,3 +13,4 @@
 {"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QUpdate server.ts file\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAt the end, make sure to export the const \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q to be used throughout your application.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTo have syntax highlighting for \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q files, install DotENV extension on VS Code.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAsync Initialization: Plugins can perform asynchronous tasks during initialization.\\E$"}
