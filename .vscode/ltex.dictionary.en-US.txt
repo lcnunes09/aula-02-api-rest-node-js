@@ -4,3 +4,4 @@ transpiled
 Fastify
 Knex
 Rocketseat
+Zod

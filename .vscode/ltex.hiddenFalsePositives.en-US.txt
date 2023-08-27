@@ -3,3 +3,13 @@
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWhen opening the \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q file, look for editor.codeActionsOnSave:\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QACID Compliance: SQLite is ACID-compliant, meaning that it ensures data integrity by supporting atomicity, consistency, isolation, and durability in transactions.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QUse httpie to run the GET method:\\E$"}
+{"rule":"OUTSIDE_OF","sentence":"^\\QEnvironment variables are dynamic values that are set outside of your application's code and are used to customize the behavior of your application based on the environment it is running in.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QInstall DotENV extension on VS Code\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTo have syntax highlighting for .env files, install DotENV extension on VS Code.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QUsing config from dotenv\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QYou can define complex validation rules using a chainable API that reads like a fluent API.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBuilt-in Validators: Zod provides a variety of built-in validators for common data types such as strings, numbers, booleans, objects, arrays, and more.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QCustom Validation: You can define custom validation logic using functions and combinators provided by Zod, allowing you to create complex validation rules.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QUpdate server.ts file\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QAt the end, make sure to export the const \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q to be used throughout your application.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTo have syntax highlighting for \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q files, install DotENV extension on VS Code.\\E$"}
