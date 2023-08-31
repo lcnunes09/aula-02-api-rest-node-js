@@ -26,6 +26,14 @@ export async function transactionsRoutes(app: FastifyInstance) {
         }
     })
 
+    app.get('/account-balance', async () => {
+        const balance = await knex('transactions').sum('amount', { as: 'total' }).first()
+    
+        return {
+            balance
+        }
+    })
+
     app.post('/', async (request, reply) => {
         const createTransactionBodySchema = z.object({
             title: z.string(),
