@@ -20,3 +20,11 @@
 {"rule":"ID_CASING","sentence":"^\\QIn order to list a specific transaction via id, create a GET route on \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q file:\\E$"}
 {"rule":"ANY_BODY","sentence":"^\\QMethod: GET URL: \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q No Body\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn order to test the GET endpoint to list a specific transaction, use the same GET method, but add the ID into the URL, as a query param.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTo avoid adding for each endpoint the validation, we will use a preHandler.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIn Fastify, a preHandler is a type of middleware that allows you to perform certain actions before the main handler for a route is executed.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBasically what the code is doing is to execute the preHandler checkSessionIdExists\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QBasically what the code is doing is to execute the preHandler checkSessionIdExists before executing the code.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRemember to add the preHandler in all routes that need to check the SessionId.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QNote: If there's a need to add a global Hook, meaning that the hook/preHandler will be valid for all routes in the file, after declaring the routes function, add:\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIf this code is added on the \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q file, this means that all methods will execute this preHandler.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QUpdate the GET method to use the preHandler\\E$"}
