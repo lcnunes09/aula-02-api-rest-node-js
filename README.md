@@ -12,5 +12,5 @@ Read through the `Guide` to build the application from scratch!
 ## Business Rules
 
 - [x] The transaction could be a deposit type, increasing the total balance, or a withdrawal type, decreasing the total balance.
-- [ ] Should be possible to identify the user for each transaction request.
-- [ ] User can only see the transactions requested by themselves.
+- [x] Should be possible to identify the user for each transaction request.
+- [x] User can only see the transactions requested by themselves.
