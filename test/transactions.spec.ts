@@ -21,7 +21,7 @@ describe('Transactions routes', () => {
         const response = await request(app.server)
             .post('/transactions')
             .send({
-                title: 'New transaction',
+                title: 'New deposit transaction',
                 amount: 5000,
                 type: 'deposit',
             })
@@ -32,7 +32,7 @@ describe('Transactions routes', () => {
         const createTransactionResponse = await request(app.server)
             .post('/transactions')
             .send({
-                title: 'New transaction',
+                title: 'New deposit transaction',
                 amount: 500,
                 type: 'deposit'
             })
@@ -46,7 +46,7 @@ describe('Transactions routes', () => {
 
         expect(listTransactionsResponse.body.transactions).toEqual([
             expect.objectContaining({
-                title: 'New transaction',
+                title: 'New deposit transaction',
                 amount: 500,
             }),
         ])
@@ -56,7 +56,7 @@ describe('Transactions routes', () => {
         const createTransactionResponse = await request(app.server)
             .post('/transactions')
             .send({
-                title: 'New transaction',
+                title: 'New deposit transaction',
                 amount: 500,
                 type: 'deposit'
             })
@@ -77,9 +77,39 @@ describe('Transactions routes', () => {
     
         expect(getTransactionResponse.body.transaction).toEqual(
             expect.objectContaining({
-                title: 'New transaction',
+                title: 'New deposit transaction',
                 amount: 500,
             }),
         )
+    })
+
+    it('should be able to get the account balance', async () => {
+        const createTransactionResponse = await request(app.server)
+            .post('/transactions')
+            .send({
+                title: 'New deposit transaction',
+                amount: 500,
+                type: 'deposit'
+            })
+    
+        const cookies = createTransactionResponse.get('Set-Cookie')
+    
+        await request(app.server)
+            .post('/transactions')
+            .set('Cookie', cookies)
+            .send({
+                title: 'New withdrawal transaction',
+                amount: 200,
+                type: 'withdrawal'
+            })
+    
+        const accountBalanceResponse = await request(app.server)
+            .get('/transactions/account-balance')
+            .set('Cookie', cookies)
+            .expect(200)
+    
+        expect(accountBalanceResponse.body.balance).toEqual({
+            total: 300
+        })
     })
 })
